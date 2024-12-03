@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIMINER</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <header>
+            <h1 id="main-title">
+                <img src="imagens/MSlogo.webp" alt="Logo MOVISAFE" style="height: 50px; vertical-align: middle; margin-right: 10px;">
+                MOVIMINER
+            </h1>
+        </header>
+        
+    </header>
+    <main>
+        <!-- Formulário -->
+        <section>
+            <h2>Inserir Clipping</h2>
+            <form id="clipping-form">
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required><br>
+
+                <label for="tipicidade">Tipicidade:</label>
+                <select id="tipicidade" name="tipicidade" required>
+                    <option value="latrocinio">Latrocínio</option>
+                    <option value="homicidio">Homicídio</option>
+                    <option value="operacao_policial">Operação Policial</option>
+                    <option value="apreensao_drogas">Apreensão de Drogas</option>
+                    <option value="roubo_cargas">Roubo de Cargas</option>
+                    <option value="recuperacao_cargas">Recuperação de Cargas</option>
+                    <option value="apreensao_veiculos">Apreensão de Veículos</option>
+                    <option value="roubo_veiculos">Roubo de Veículos</option>
+                    <option value="assalto">Assalto</option>
+                    <option value="troca_tiros">Troca de Tiros</option>
+                    <option value="atropelamento">Atropelamento</option>
+                    <option value="enchente">Enchente</option>
+                    <option value="alagamento">Alagamento</option>
+                    <option value="incendio">Incêndio</option>
+                    <option value="catastrofe_natural">Catástrofe Natural</option>
+                </select><br>
+
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado" required>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </select><br>
+
+                <div id="zonas-rj" style="display: none;">
+                    <label for="regiao">Zona:</label>
+                    <select id="regiao" name="regiao">
+                        <option value="zona_norte">Zona Norte</option>
+                        <option value="zona_sul">Zona Sul</option>
+                        <option value="zona_oeste">Zona Oeste</option>
+                        <option value="baixada_fluminense">Baixada Fluminense</option>
+                    </select><br>
+                </div>
+
+                <label for="link">Link da Notícia:</label>
+                <input type="url" id="link" name="link" required><br>
+
+                <button type="submit">Incluir</button>
+            </form>
+        </section>
+
+        <!-- Mapa -->
+        <section>
+            <h2>Mapa de Incidentes</h2>
+            <div id="map" style="height: 500px; width: 100%;"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/* Centralizando o título principal */
+#main-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #003366; /* Cor azul para o título */
+    text-align: center; /* Centraliza o título */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo da imagem ao lado do título */
+#main-title img {
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Estilo para as labels */
+form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo para as caixas de inserção com efeito 3D */
+form input[type="text"], 
+form input[type="date"], 
+form input[type="url"], 
+form select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; /* Para as caixas ocuparem toda a largura */
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 4px 16px rgba(0, 0, 0, 0.15); /* Efeito 3D */
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+form input[type="text"]:focus, 
+form input[type="date"]:focus, 
+form input[type="url"]:focus, 
+form select:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 4px 20px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao focar */
+    transform: translateY(-2px); /* Leve elevação ao focar */
+}
+
+/* Botão com efeito 3D */
+form button {
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 4px 16px rgba(0, 0, 0, 0.15); /* Efeito 3D */
+}
+
+form button:hover {
+    background-color: #005599;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 8px 24px rgba(0, 0, 0, 0.25); /* Aumenta a sombra no hover */
+    transform: translateY(-3px); /* Eleva o botão ao passar o mouse */
+}
+
+form button:active {
+    transform: translateY(1px); /* Leve afundamento quando pressionado */
+}
+
+/* Estilo do título "Inserir Clipping" */
+section h2 {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Mapa */
+#map {
+    height: 500px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1#main-title {
+    font-weight: bold;
+    font-size: 36px;
+    color: #fff;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    padding: 8px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+}
+
