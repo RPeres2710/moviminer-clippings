@@ -10,13 +10,10 @@
 </head>
 <body>
     <header>
-        <header>
-            <h1 id="main-title">
-                <img src="imagens/MSlogo.webp" alt="Logo MOVISAFE" style="height: 50px; vertical-align: middle; margin-right: 10px;">
-                MOVIMINER
-            </h1>
-        </header>
-        
+        <div class="header-container">
+            <img src="MSlogo.webp" alt="Logo Moviminer" class="logo">
+            <h1 id="main-title">MOVIMINER</h1>
+        </div>
     </header>
     <main>
         <!-- Formulário -->
@@ -45,24 +42,19 @@
                     <option value="catastrofe_natural">Catástrofe Natural</option>
                 </select><br>
 
-                <label for="estado">Estado:</label>
-                <select id="estado" name="estado" required>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="SP">São Paulo</option>
+                <label for="regiao">Região:</label>
+                <select id="regiao" name="regiao" required>
+                    <option value="zona_sul">Zona Sul</option>
+                    <option value="zona_norte">Zona Norte</option>
+                    <option value="zona_oeste">Zona Oeste</option>
+                    <option value="baixada_fluminense">Baixada Fluminense</option>
                 </select><br>
 
-                <div id="zonas-rj" style="display: none;">
-                    <label for="regiao">Zona:</label>
-                    <select id="regiao" name="regiao">
-                        <option value="zona_norte">Zona Norte</option>
-                        <option value="zona_sul">Zona Sul</option>
-                        <option value="zona_oeste">Zona Oeste</option>
-                        <option value="baixada_fluminense">Baixada Fluminense</option>
-                    </select><br>
-                </div>
-
-                <label for="link">Link da Notícia:</label>
-                <input type="url" id="link" name="link" required><br>
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado" required>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="sp">São Paulo</option>
+                </select><br>
 
                 <button type="submit">Incluir</button>
             </form>
@@ -74,9 +66,9 @@
             <div id="map" style="height: 500px; width: 100%;"></div>
         </section>
     </main>
-
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
